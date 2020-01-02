@@ -435,8 +435,8 @@ public class FunctionUtils {
             throw new NumberIsTooLargeException(min, max, false);
         }
 
-        final double[] s = new double[n];
-        final double h = (max - min) / n;
+        double[] s = new double[n];
+        double h = (max - min) / n;
         for (int i = 0; i < n; i++) {
             s[i] = f.value(min + i * h);
         }
